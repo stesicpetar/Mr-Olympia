@@ -1,0 +1,59 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#cover{
+    width: 100%;
+    height: 600px;
+    background-image: url('../images/cover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px auto;
+}
+
+@media screen and (max-width: 991px) {
+    #cover {
+        height: 500px;
+    }
+    ul.navbar-nav li {
+        margin-left: 0px;
+    } 
+}
+@media screen and (max-width: 815px) {
+    #cover {
+        height: 320px;
+    }
+}
+@media screen and (max-width: 577px) {
+    #cover {
+        height: 160px;
+    }
+}
+
+#about{
+    width: 80%;
+    height: inherit;
+}
+
+#logo{
+    background-image: url('../images/logo.png');
+    background-size: cover;
+    width: 100%;
+    height: 50px;
+}
+
+#slider{
+    margin: 0px auto;
+    width: 45%;
+}
+
+#misc{
+    width: 95%;
+    margin: 0px auto;
+}
+
+i{
+    font-size: 25px;
+}

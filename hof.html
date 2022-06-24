@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+  <html>
+
+    <head>
+      <title>Mr. Olympia | Hall Of Fame</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="Hall of Fame"/>
+        <meta name="keywords" content="olympia, fame, "/>
+        <meta name="author" content="Petar Stešić"/>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="assets/css/style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"/>
+        <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico"/>
+        <script src="assets/js/izborSezone.js"></script>
+        <script src="https://kit.fontawesome.com/81d2b053cd.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-black border-bottom">
+
+        <div class="container-fluid">
+          <a class="navbar-brand text-warning" href="index.html"><img class="fluid" src="assets/images/logo.png" width="60px" height="60px"/></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+              <a class="nav-link text-warning fw-bold fs-5" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-warning fw-bold fs-5" href="tickets.html">Tickets</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-warning fw-bold fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal">Season Winners</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-warning fw-bold fs-5" href="hof.html">Hall Of Fame</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-warning fw-bold fs-5" href="http://www.petarstesic.tk">Author</a>
+          </li>
+          </ul>
+        </div>
+  </div>
+</nav>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Season List</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <select name="seasons" id="seasons" class="form-select" aria-label="Default select example">
+                <option selected disabled hidden>Season...</option>
+                <option value="#exampleModalToggle1" onclick=izborSezone()>1965</option>
+                <option value="#exampleModalToggle2" onclick=izborSezone()>1966</option>
+                <option value="#exampleModalToggle3" onclick=izborSezone()>1967</option>
+                <option value="#exampleModalToggle4" onclick=izborSezone()>1968</option>
+                <option value="#exampleModalToggle5" onclick=izborSezone()>1969</option>
+                <option value="#exampleModalToggle6" onclick=izborSezone()>1970</option>
+                <option value="#exampleModalToggle7" onclick=izborSezone()>1971</option>
+                <option value="#exampleModalToggle8" onclick=izborSezone()>1972</option>
+                <option value="#exampleModalToggle9" onclick=izborSezone()>1973</option>
+              </select>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button id="izbor" type="button" class="btn btn-primary" data-bs-target="#exampleModalToggle1" data-bs-toggle="modal">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModalToggle1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel1" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalToggleLabel1">1965</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <h2 class="fw-bold">Larry Scott</h2>
+            <p>He is the only competitor to have never lost a Mr. Olympia when he competed.</p>
+            <hr>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-bs-target="#exampleModal" data-bs-toggle="modal">Back</button>
+          <button class="btn btn-danger" data-bs-dismiss="modal" data-bs-toggle="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalToggleLabel2">1966.</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h2 class="fw-bold">Larry Scott</h2>
+            <p>He is the only competitor to have never lost a Mr. Olympia when he competed.</p>
+          <hr>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-target="#exampleModal" data-bs-toggle="modal">Back</button>
+            <button class="btn btn-danger" data-bs-dismiss="modal" data-bs-toggle="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalToggleLabel3">1967</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h2 class="fw-bold">Larry Scott</h2>
+            <p>He is the only competitor to have never lost a Mr. Olympia when he competed.</p>
+          <hr>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-target="#exampleModal" data-bs-toggle="modal">Back</button>
+            <button class="btn btn-danger" data-bs-dismiss="modal" data-bs-toggle="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" id="exampleModalToggle4" aria-hidden="true" aria-labelledby="exampleModalToggleLabel4" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalToggleLabel4">1968</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h2 class="fw-bold">Larry Scott</h2>
+            <p>He is the only competitor to have never lost a Mr. Olympia when he competed.</p>
+            <hr>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-target="#exampleModal" data-bs-toggle="modal">Back</button>
+            <button class="btn btn-danger" data-bs-dismiss="modal" data-bs-toggle="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModalToggle5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel5" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalToggleLabel5">1969</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h2 class="fw-bold">Larry Scott</h2>
+            <p>He is the only competitor to have never lost a Mr. Olympia when he competed.</p>
+            <hr>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-target="#exampleModal" data-bs-toggle="modal">Back</button>
+            <button class="btn btn-danger" data-bs-dismiss="modal" data-bs-toggle="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModalToggle6" aria-hidden="true" aria-labelledby="exampleModalToggleLabel6" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalToggleLabel6">1970</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h2 class="fw-bold">Larry Scott</h2>
+          <p>He is the only competitor to have never lost a Mr. Olympia when he competed.</p>
+          <hr>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-target="#exampleModal" data-bs-toggle="modal">Back</button>
+            <button class="btn btn-danger" data-bs-dismiss="modal" data-bs-toggle="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModalToggle7" aria-hidden="true" aria-labelledby="exampleModalToggleLabel7" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalToggleLabel7">1971</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h2 class="fw-bold">Larry Scott</h2>
+          <p>He is the only competitor to have never lost a Mr. Olympia when he competed.</p>
+          <hr>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-target="#exampleModal" data-bs-toggle="modal">Back</button>
+            <button class="btn btn-danger" data-bs-dismiss="modal" data-bs-toggle="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModalToggle8" aria-hidden="true" aria-labelledby="exampleModalToggleLabel8" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalToggleLabel8">1972</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h2 class="fw-bold">Larry Scott</h2>
+          <p>He is the only competitor to have never lost a Mr. Olympia when he competed.</p>
+          <hr>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-target="#exampleModal" data-bs-toggle="modal">Back</button>
+            <button class="btn btn-danger" data-bs-dismiss="modal" data-bs-toggle="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModalToggle9" aria-hidden="true" aria-labelledby="exampleModalToggleLabel9" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalToggleLabel9">1973</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h2 class="fw-bold">Larry Scott</h2>
+          <p>He is the only competitor to have never lost a Mr. Olympia when he competed.</p>
+          <hr>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-target="#exampleModal" data-bs-toggle="modal">Back</button>
+            <button class="btn btn-danger" data-bs-dismiss="modal" data-bs-toggle="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<br/>
+<br/>
+<br/>
+
+<div class="container">
+
+<figure class="my-sm-5">
+    <blockquote class="blockquote">
+      <p>Record number of 8 wins is held by two people.</p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+        Ronnie Coleman and Lee Haney
+    </figcaption>
+  </figure>
+
+  <figure class="text-end my-sm-5">
+    <blockquote class="blockquote">
+      <p>Won the title 7 times, of which are 4 in a row.</p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+        Arnold Schwarzenegger
+    </figcaption>
+  </figure>
+
+  <figure class="my-sm-5">
+    <blockquote class="blockquote">
+      <p>Won his only title in 1982, making him the first openly gay Mr. Olympia.</p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+        Chris Dickerson
+    </figcaption>
+  </figure>
+
+  <figure class="text-end my-sm-5">
+    <blockquote class="blockquote">
+      <p>Is given credit for revolutionizing the sport during his reign as Mr. Olympia by combining larger mass than seen before with what was dubbed "granite hardness".</p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+        Dorian Yates
+    </figcaption>
+  </figure>
+
+  <figure class="my-sm-5">
+    <blockquote class="blockquote">
+      <p>Nicknamed "The King", he is widely regarded as the greatest bodybuilder in Olympia history and began the mass monster era.</p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+        Ronnie Coleman
+    </figcaption>
+  </figure>
+
+  <figure class="my-sm-5">
+    <blockquote class="blockquote">
+      <p>He was the inaugural champion in Classic Physique division.</p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+      Danny Hester
+    </figcaption>
+  </figure>
+
+  <figure class="text-end my-sm-5">
+    <blockquote class="blockquote">
+      <p>From 2012 to 2014, the Olympia was dominated by the rivalry between Kai Greene and Heath, with Heath winning all three and Greene placing second.</p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+        Kai Greene and Phil Heath
+    </figcaption>
+</figure>
+
+<figure class="text-end my-sm-5">
+    <blockquote class="blockquote">
+      <p>“You do need to eat good quality foods, 3 times per day.  But you can’t get it all with just regular food. That is where supplements come in”.</p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+        Larry Scott
+    </figcaption>
+</figure>
+
+<figure class="my-sm-5">
+    <blockquote class="blockquote">
+      <p>Currently won 3 times in a row Mr. Olympia Classic Physique</p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+        Chris Bumstead
+    </figcaption>
+</figure>
+
+<figure class="text-end my-sm-5">
+    <blockquote class="blockquote">
+      <p>“Why go all the way up on preacher curls? That just takes the tension off the lower biceps. Just do the bottom one-third of the range of motion and keep hammering away at the lower biceps.”</p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+        Sergio Oliva   
+    </figcaption>
+</figure>
+
+<figure class="text-end my-sm-5">
+    <blockquote class="blockquote">
+      <p>“There will be times when a body part lags behind because you are overtraining it, hitting it so hard, so often, and so intensely that it never has a chance to rest, recuperate, and grow,”</p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+        Arnold Schwarzenegger
+    </figcaption>
+</figure>
+
+<figure class="text-end my-sm-5">
+    <blockquote class="blockquote">
+      <p>“Don't attempt advanced routines with extremely heavy weights until you are at the appropriate levels of strength. Be your own judge”.</p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+        Franco Columbo  
+    </figcaption>
+</figure>
+
+<figure class="text-end my-sm-5">
+    <blockquote class="blockquote">
+      <p>“Train in a sensible way. It's NOT going to happen overnight. Don't try to get in shape in one day, or one week, or even a month”.</p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+      Frank Zane  
+    </figcaption>
+</figure>
+
+<figure class="my-sm-5">
+    <blockquote class="blockquote">
+      <p>“If I were to do a bicep curl and two other people were to do a bicep curl, our arms are going to come out looking unique according to our genetics, not exactly the same”.</p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+        Chris Dickerson
+    </figcaption>
+</figure>
+
+<figure class="my-sm-5">
+    <blockquote class="blockquote">
+      <p>As long as you eat five proper meals per day and you recover from training, and you don’t overtrain, I think everything will fall into place”.</p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+        Samir Bannout
+    </figcaption>
+</figure>
+
+</div>
+
+<footer class="bg-dark text-light mt-5 d-flex justify-content-between" width="100%">
+  <div class="text-center p-2">
+   &copy Petar Stešić 2022
+  </div>
+  <div class="text-center p-2 d-flex justify-content-around">
+    <div class="mx-2"><a href="https://en.wikipedia.org/wiki/Mr._Olympia#1960s" target="_blank"><i class="fa-brands fa-wikipedia-w text-warning"></i></a></div>
+    <div class="mx-2"><a href="sitemap.xml"><i class="fa-solid fa-sitemap text-warning"></i></a></div>
+    <div class="mx-2"><a href="assets/css/style.css"><i class="fa-solid fa-file-code text-warning"></i></a></div>
+  </div>
+</footer>
+</body>
+</html>
